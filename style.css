@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+}
+
+header{
+  background: gray;
+  text-align: center;
+}
+
+input[type="color"]{
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: none;
+  border: none;
+  background: none;
+  margin: 1em auto;
+}
+
+/*Setting*/
+
+.setting{
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  background: #C3C3C3;
+}
+.setting h2{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.setting svg{
+  vertical-align: bottom;
+  margin: 0 5px;
+}
+.input-container{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+.setting input{
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+}
+
+.grid-presets{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin: 10px auto;
+}
+.grid-presets button{
+  padding: 5px 10px;
+}
+
+#create-btn{
+  padding: 10px;
+}
+
+
+
+section{
+  display: flex;
+  justify-content: center;
+}
+
+
+#grid-container{
+  display: grid;
+  width: 300px;
+  height: 300px;
+  border: 3px solid #000105;
+}
+
+.grid-cell{
+  max-width: 100%;
+  height: auto;
+}
+
+.grid-border{
+  border: .5px solid black;
+}
+
+#grid-border-btn{
+  margin-left: 3em;
+  padding: .5em 2em;
+}
