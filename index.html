@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header>
+    <h1>Pixel Art Maker</h1>
+    <p>1:1 only because ... and don't put it 100++</p>
+  </header>
+  
+  <div class="setting">
+    
+    <h2>Create New</h2>
+    
+    <div class="input-container">
+      <input type="number" placeholder="X" id="x-axis">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+     </svg>
+     
+     <input type="number" placeholder="Y" id="y-axis">
+     
+    </div>
+    
+    
+    <div class="grid-presets">
+      <p>Preset:</p>
+      <button onclick="setValue(8)">8 × 8</button>
+      <button onclick="setValue(16)">16 × 16</button>
+      <button onclick="setValue(32)">32 × 32</button>
+    </div>
+    <button id="create-btn">Create</button>
+  </div>
+  
+  
+  <button id="grid-border-btn">Grid Border</button>
+  <input type="color" id="input-color">
+
+  <section >
+    
+    <div id="grid-container"></div>
+    
+  </section>
+  
+  <script src="main.js"></script>
+  
+</body>
+</html>
