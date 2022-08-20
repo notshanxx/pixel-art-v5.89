@@ -26,7 +26,7 @@ header{
   color: #C6C6C6;
 }
 h1, h2{
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: 'Press Start 2P', serif;
   color: var(--darkViolet);
   -webkit-text-stroke: .7px var(--cyan);
   
