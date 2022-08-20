@@ -1,3 +1,11 @@
+:root{
+  --white: #ffffff;
+  --cyan: #00fff0;
+  --violet: #8b00cc;
+  --darkViolet: #090314;
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -6,13 +14,24 @@
 
 body{
   min-height: 100vh;
+  margin-bottom: 3em;
+  background: #4C4C4C;
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 header{
   padding: 1em 0;
-  background: gray;
+  background: var(--darkViolet);
   text-align: center;
+  color: #C6C6C6;
 }
+h1, h2{
+  font-family: 'Press Start 2P', sans-serif;
+  color: var(--darkViolet);
+  -webkit-text-stroke: .7px var(--cyan);
+  
+}
+
 
 input[type="color"]{
   display: block;
@@ -23,6 +42,13 @@ input[type="color"]{
   background: none;
   margin: 1em auto;
 }
+button{
+  background: var(--violet);
+  border: none;
+  border-right: 1px solid var(--cyan);
+  border-bottom: 1px solid var(--cyan);
+  color: var(--white);
+}
 
 /*Setting*/
 
@@ -31,7 +57,8 @@ input[type="color"]{
   display: flex;
   flex-direction: column;
   padding: 1em;
-  background: #C3C3C3;
+  border: 1px solid #8b00cc;
+  background: var(--darkViolet);
 }
 .setting h2{
   text-align: center;
@@ -48,9 +75,14 @@ input[type="color"]{
 }
 .setting input{
   display: block;
-  width: 30px;
+  width: 80px;
   height: 30px;
   padding: 6px;
+  background: #49308f;
+  color: var(--white);
+  border: none;
+  border-left: 2px solid #00fff0;
+  border-bottom: 2px solid #00fff0;
 }
 
 .grid-presets{
@@ -58,6 +90,9 @@ input[type="color"]{
   flex-direction: row;
   gap: 5px;
   margin: 10px auto;
+}
+.grid-presets p{
+  color: var(--white);
 }
 .grid-presets button{
   padding: 5px 10px;
@@ -79,19 +114,22 @@ section{
   display: grid;
   width: 300px;
   height: 300px;
-  border: 3px solid #000105;
+  background: white;
 }
 
 .grid-cell{
   max-width: 100%;
   height: auto;
-}
-
-.grid-border{
   border: .5px solid black;
 }
 
+.grid-border{
+  border: none;
+}
+
 #grid-border-btn{
+  background: var(--darkViolet);
+  
   margin-left: 3em;
   padding: .5em 2em;
 }
